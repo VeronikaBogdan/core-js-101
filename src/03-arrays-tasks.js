@@ -20,8 +20,8 @@
  *    ['Array', 'Number', 'string'], 'Date'    => -1
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
-function findElement(/* arr, value */) {
-  throw new Error('Not implemented');
+function findElement(arr, value) {
+  return arr.findIndex((item) => item === value);
 }
 
 /**
@@ -52,8 +52,8 @@ function generateOdds(/* len */) {
  *    [0, 1, 2, 3, 4, 5] => [0, 1, 2, 3, 4, 5,   0, 1, 2, 3, 4, 5]
  *    [] => []
  */
-function doubleArray(/* arr */) {
-  throw new Error('Not implemented');
+function doubleArray(arr) {
+  return [...arr, ...arr];
 }
 
 
@@ -68,8 +68,8 @@ function doubleArray(/* arr */) {
  *    [-1, 2, -5, -4, 0] => [ 2 ]
  *    [] => []
  */
-function getArrayOfPositives(/* arr */) {
-  throw new Error('Not implemented');
+function getArrayOfPositives(arr) {
+  return arr.filter((num) => num > 0);
 }
 
 /**
@@ -83,8 +83,8 @@ function getArrayOfPositives(/* arr */) {
  *    [ 1, 2, 3, 4, 5 ] => []
  *    [ 'cat, 'dog', 'raccoon' ] => [ 'cat', 'dog', 'raccoon' ]
  */
-function getArrayOfStrings(/* arr */) {
-  throw new Error('Not implemented');
+function getArrayOfStrings(arr) {
+  return arr.filter((item) => typeof item === 'string');
 }
 
 /**
@@ -214,8 +214,8 @@ function toCsvText(/* arr */) {
  *   [ 0, 1, 2, 3, 4, 5 ] => [ 0, 1, 4, 9, 16, 25 ]
  *   [ 10, 100, -1 ]      => [ 100, 10000, 1 ]
  */
-function toArrayOfSquares(/* arr */) {
-  throw new Error('Not implemented');
+function toArrayOfSquares(arr) {
+  return arr.map((item) => item ** 2);
 }
 
 
