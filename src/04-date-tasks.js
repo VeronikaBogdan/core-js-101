@@ -58,9 +58,6 @@ function isLeapYear(date) {
   const year = getDate.getFullYear();
   return ((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0) ? 'true' : 'false';
 }
-const getDate = new Date('Tue Feb 01 2000 00:00:00 GMT+0200 (GMT+03:00)');
-const year = getDate.getFullYear();
-console.log(((year % 4 === 0) && (year % 100 !== 0)) || (year % 400 === 0) ? 'true' : 'false');
 
 /**
  * Returns the string representation of the timespan between two dates.
